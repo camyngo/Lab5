@@ -67,23 +67,19 @@
     <div>
         <center>
             <form id="commentForm" action="">
-                <label for="name">Please input your name </label> &nbsp
-                <label for="comment"> &nbsp  &nbsp  &nbsp Please input your comment</label><br>
-                <input type="text" id="name" placeholder="Name">
-                <input type="text" id="comment" placeholder="Comment"><br>
+                <label for="name">&nbsp &nbsp Please input your name </label>
+                <label for="comment">&nbsp  Please input your comment</label>
+                <label for="query">&nbspSearch messages by name </label><br>
+                <input type="text" id="name" placeholder="Name">&nbsp&nbsp
+                <input type="text" id="comment" placeholder="Comment">&nbsp&nbsp
+                <input type="text" id="query" placeholder="Query"><br>
             </form>
         </center>
     </div>
 
-    <!--<form id="queryForm" action="">
-<label for="query">Name for query: </label><input type="text" id="query" placeholder="Query">
-</form> -->
-
     <button id="postComment" class="btn btn-info btn-sm">Post Comment</button>
     <button id="getComments" class="btn btn-warning btn-sm">Get Comments</button>
     <button onclick="check()" id="deleteComments" class="btn btn-danger btn-sm">Delete All</button>
-    <br>
-    <br>
     <br>
     <label> Comment</label>
     <div id="json"></div>

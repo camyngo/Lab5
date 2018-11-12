@@ -12,9 +12,10 @@ $(document).ready(function() {
     
     // post a comment when button is on click
     $("#postComment").click(function() {
-        var myobj = { Name: $("#name").val(), Comment: $("#comment").val() };
+        var myobj = { "Name": $("#name").val(), "Comment": $("#comment").val() };
         // make the whole object into a string
         jobj = JSON.stringify(myobj);
+        
         //print out the string
         $("#json").text(jobj);
         var url = "comment";
